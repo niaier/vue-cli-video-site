@@ -23,15 +23,22 @@
                 style="display:block;width:100%"
                 :src="'http://127.0.0.1:3000/video/'+videoIndex[i].dirname+'/'+videoIndex[i].dirname+'.jpg'"
               />
+
+                              <!-- <img
+                style="display:block;width:100%"
+                src="../../assets/testpic.png"
+              /> -->
             </a>
 
             <p>
               标题
               <a :href="'/play/'+videoIndex[i].dirname">{{videoIndex[i].title}}</a>
+              <!-- <a :href="'/play/'+videoIndex[i].dirname">标题{{i}}</a> -->
             </p>
             <p>
               作者
               <a href title="查看用户资料" class="username">{{videoIndex[i].producer}}</a>
+              <!-- <a href title="查看用户资料" class="username">作者{{i}}</a> -->
             </p>
           </a-card>
         </a-col>

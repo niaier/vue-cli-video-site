@@ -23,6 +23,11 @@
                 style="display:block;width:100%"
                 :src="'http://127.0.0.1:3000/video/'+videoIndex[i].dirname+'/'+videoIndex[i].dirname+'.jpg'"
               />
+
+                <!-- <img
+                style="display:block;width:100%"
+                src="../../assets/testpic.png"
+              /> -->
             </a>
 
             <p>
