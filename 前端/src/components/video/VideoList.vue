@@ -140,20 +140,24 @@ div.container {
 div.video-list {
   position: relative;
   margin: 0 auto;
-  background-color: green;
+  background-color: #ccc;
   overflow: hidden;
 
   .ant-col {
     // position: absolute;
     // left: 50%;
     // translate: 50%;
-    height: 250px;
-    border: 3px solid red;
+    height: 280px;
+    border: 3px solid #ccc;
+    overflow: hidden;
+    background-color: #fff;
 
     div.ant-card {
       margin: 0 auto;
+      border: none!important;
       .ant-card-body {
-        border: 3px solid red;
+        
+        // border: 3px solid red;
       }
 
       .ant-card-cover img {

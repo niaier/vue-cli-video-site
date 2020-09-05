@@ -157,8 +157,9 @@ div.video-list {
 
     div.ant-card {
       margin: 0 auto;
-      border: none;
+      border: none!important;
       .ant-card-body {
+        border: none;
         // border: 3px solid red;
       }
 
