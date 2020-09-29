@@ -21,7 +21,7 @@
 
               <img
                 style="display:block;width:100%"
-                :src="'http://127.0.0.1:3000/video/'+videoIndex[i].dirname+'/'+videoIndex[i].dirname+'.jpg'"
+                :src="'http://192.168.50.221:3000/video/'+videoIndex[i].dirname+'/'+videoIndex[i].dirname+'.jpg'"
               />
 
                               <!-- <img
@@ -84,7 +84,7 @@ export default {
       console.log("videolist", urlQuery);
       axios
         // .get("http://localhost:8080/api/" + (_this.changedCurrent - 1) + "/api")
-        .get("http://localhost:8080/api/love", {
+        .get("love", {
           params: {
             page: page - 1,
             sortby,
@@ -101,31 +101,31 @@ export default {
     },
   },
   watch: {
-    // changedCurrent: function () {
-    //   let _this = this;
-    //   _this.changedCurrent = _this.$store.state.changedCurrent;
-    //   console.log("changedCurrent", _this.changedCurrent);
-    //   let page = _this.changedCurrent;
-    //   let sortby = _this.$route.query.sortby;
-    //   _this.$router.push({
-    //     path: "/video",
-    //     query: { page: page, sortby: sortby },
-    //   });
-    //   axios
-    //     // .get("http://localhost:8080/api/" + (_this.changedCurrent - 1) + "/api")
-    //     .get("http://localhost:8080/api/videoList", {
-    //       params: {
-    //         page: page - 1,
-    //         sortby: sortby,
-    //       },
-    //     })
-    //     .then((value) => {
-    //       _this.indexData = value.data;
-    //       _this.videoIndex = value.data.videoIndex;
-    //       _this.pageList = value.data.pageList;
-    //       _this.curPage = value.data.curPage;
-    //     });
-    // },
+    changedCurrent: function () {
+      // let _this = this;
+      // _this.changedCurrent = _this.$store.state.changedCurrent;
+      // console.log("changedCurrent", _this.changedCurrent);
+      // let page = _this.changedCurrent;
+      // let sortby = _this.$route.query.sortby;
+      // _this.$router.push({
+      //   path: "/video",
+      //   query: { page: page, sortby: sortby },
+      // });
+      // axios
+      //   // .get("http://localhost:8080/api/" + (_this.changedCurrent - 1) + "/api")
+      //   .get("http://localhost:8080/api/videoList", {
+      //     params: {
+      //       page: page - 1,
+      //       sortby: sortby,
+      //     },
+      //   })
+      //   .then((value) => {
+      //     _this.indexData = value.data;
+      //     _this.videoIndex = value.data.videoIndex;
+      //     _this.pageList = value.data.pageList;
+      //     _this.curPage = value.data.curPage;
+      //   });
+    },
     indexData: function () {
       let _this = this;
       let indexData = _this.indexData;
